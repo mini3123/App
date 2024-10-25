@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="${session.admName} + '님 반갑습니다'"></p>
+<p th:text="'[접속하신 아이디는 ' + ${session.admId} + '입니다'"></p>
+
+<p><a href="/admin/goodsWrite">상품등록</a></p>
+
+<p><a href="/admin/order">주문관리</a></p>
+</body>
+</html>
